@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_personal_info_slider_layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@color/colorWhite"
+    app:behavior_hideable="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:clickable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageView
+        android:id="@+id/container_personal_info_slider_imgClose"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:padding="@dimen/_10sdp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_info"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/bold_font"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/font_size_xx_large"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/font_size_small"
+            android:text="@string/gender"
+            android:textColor="@color/colorPrimaryText"
+            android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <LinearLayout
+            android:id="@+id/containt_personal_info_layoutGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/containt_personal_info_txtGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="@color/colorPrimaryText"
+                android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+                android:layout_weight="1"
+                android:text="Unknown"
+                />
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_down_arrow"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimaryText"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/font_size_small"
+            android:text="@string/referral_source"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+            />
+
+        <LinearLayout
+            android:id="@+id/containt_personal_info_layoutReferral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/containt_personal_info_txtReferral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+                />
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_down_arrow"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimaryText"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/bold_font"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/font_size_xx_large"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/font_size_small"
+            android:text="@string/select_month"
+            android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <LinearLayout
+            android:id="@+id/containt_personal_info_layoutMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/containt_personal_info_txtMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+                />
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_down_arrow"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimaryText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/select_day"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+                    />
+
+                <LinearLayout
+                    android:id="@+id/containt_personal_info_layoutDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/containt_personal_info_txtDay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textColor="@color/colorPrimaryText"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorPrimaryText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_20sdp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/select_year"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        
+                    />
+
+                <LinearLayout
+                    android:id="@+id/containt_personal_info_layoutYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/containt_personal_info_txtYear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textColor="@color/colorPrimaryText"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:includeFontPadding="false"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorPrimaryText"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine_txtSelect"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        android:layout_above="@+id/containt_personal_info_txtSave"
+        />
+
+    <TextView
+        android:id="@+id/containt_personal_info_txtSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_size_large"
+        android:background="@drawable/ic_save_btn_bg"
+        android:fontFamily="@font/helvetica_regular"
+        android:includeFontPadding="false"
+        android:textAlignment="center"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

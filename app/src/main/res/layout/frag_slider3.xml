@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragSlider3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@mipmap/img_male_icon"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@mipmap/img_female_icon"
+                android:layout_marginStart="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/staff_members"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:fontFamily="@font/helvetica_regular"
+            android:textSize="@dimen/font_size_large"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accessing_your_location_will"
+            android:textColor="@color/colorPrimaryText"
+            android:textAlignment="center"
+            android:fontFamily="@font/helvetica_regular"
+            android:textSize="@dimen/thin_text"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

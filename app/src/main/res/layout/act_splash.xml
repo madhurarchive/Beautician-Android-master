@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorWhite"
+    tools:mContext="com.alaa_aldeen.activity.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/beautician_app_logo"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="@string/beautician"
+            android:textAlignment="center"
+            android:textSize="@dimen/_24ssp"
+            android:fontFamily="@font/bold_font"
+            android:includeFontPadding="false"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splesh_txt_color"
+            android:text="@string/find_and_book_your_favourite"
+            android:textAlignment="center"
+            android:textSize="@dimen/thin_text"
+            android:fontFamily="@font/bold_font"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_5sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

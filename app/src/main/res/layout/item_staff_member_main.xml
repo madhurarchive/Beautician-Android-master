@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root_staff_member_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/item_staff_member_main_handleView"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:src="@drawable/ic_hamburger"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/appointment_img_color"
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:src="@drawable/color_picker_view_1"
+            android:layout_marginStart="@dimen/_15sdp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_staff_member_main_txtName"
+        android:layout_width="@dimen/staff_member_main_text_size"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/staff_member_main_text_padding"
+        android:paddingBottom="@dimen/staff_member_main_text_padding"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:fontFamily="@font/regular_font"
+        android:textSize="@dimen/extra_thin_text"
+        />
+
+    <TextView
+        android:id="@+id/item_staff_member_main_txtMobile"
+        android:layout_width="@dimen/staff_member_main_text_size"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/staff_member_main_text_padding"
+        android:paddingBottom="@dimen/staff_member_main_text_padding"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/extra_thin_text"
+        android:textAllCaps="true"
+        android:fontFamily="@font/regular_font"
+        />
+
+    <TextView
+        android:id="@+id/item_staff_member_main_txtEmail"
+        android:layout_width="@dimen/staff_member_main_text_size"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/staff_member_main_text_padding"
+        android:paddingBottom="@dimen/staff_member_main_text_padding"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:fontFamily="@font/regular_font"
+        android:textSize="@dimen/extra_thin_text"
+        />
+
+</LinearLayout>

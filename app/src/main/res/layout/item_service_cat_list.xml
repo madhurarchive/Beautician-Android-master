@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_service_cat_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center_vertical"
+    android:background="@drawable/ic_left_side_color"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/item_service_cat_txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryText"
+            android:fontFamily="@font/helvetica_regular"
+            android:textSize="@dimen/font_size_regular"
+            android:text="@string/app_name"/>
+        <TextView
+            android:id="@+id/item_service_cat_txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/helvetica_regular"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/thin_text"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_service_cat_txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimaryText"
+        android:fontFamily="@font/helvetica_regular"
+        android:textSize="@dimen/font_size_regular"
+        android:text="25"
+        />
+</LinearLayout>

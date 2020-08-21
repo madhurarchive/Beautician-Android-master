@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragStaffCloseDate"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+    <include layout="@layout/toolbar2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack"/>
+
+    <ImageView
+        android:id="@+id/frag_staff_close_date_img_add"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/space_5x"
+        android:src="@drawable/ic_add"
+        android:tint="@color/colorAccent"
+        android:layout_margin="@dimen/_15sdp"
+        />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_inventory_product_edit_bg"
+        android:layout_marginStart="@dimen/staff_member_main_text_padding"
+        android:layout_marginEnd="@dimen/staff_member_main_text_padding"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/frag_staff_close_date_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorNoInternetDialogBg"
+                >
+
+                <TextView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_range"
+                    android:textColor="@color/colorSecondaryText"
+                    android:padding="@dimen/staff_member_main_text_padding"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:textSize="@dimen/font_size_small"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/staff_member_main_text_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_of_days"
+                    android:textColor="@color/colorSecondaryText"
+                    android:padding="@dimen/staff_member_main_text_padding"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:textSize="@dimen/font_size_small"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/staff_member_main_text_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locations"
+                    android:textColor="@color/colorSecondaryText"
+                    android:padding="@dimen/staff_member_main_text_padding"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:textSize="@dimen/font_size_small"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/staff_member_main_text_size"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/colorSecondaryText"
+                    android:padding="@dimen/staff_member_main_text_padding"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:textSize="@dimen/font_size_small"
+                    />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/frag_staff_close_date_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/frag_staff_close_date_txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_record_found"
+        android:textColor="@color/colorPrimaryText"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_medium"
+        android:fontFamily="@font/regular_font"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

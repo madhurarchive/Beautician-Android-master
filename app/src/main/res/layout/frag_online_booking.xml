@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.provider.beautician.fragment.FragOnlineBooking"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/font_size_x_large"
+            android:text="@string/online_booking"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/containt_slider_txtSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_regular"
+            android:text="@string/allow_clients_to_book_this"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            >
+
+            <TextView
+                android:id="@+id/item_notification_list_txtHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_medium"
+                android:text="@string/enable_online_bookings"
+                android:layout_weight="1"
+                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/item_notification_list_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:thumb="@drawable/custom_thumb"
+                app:track="@drawable/custom_track"
+                android:checked="true"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlack"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/service_description"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_medium"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorBlack"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlack"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/font_size_small"
+            android:text="@string/service_available_for"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <LinearLayout
+            android:id="@+id/frag_online_booking_layoutService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/frag_online_booking_txtService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:text="Everyone"
+                />
+            <ImageView
+                android:layout_width="@dimen/right_arrow_size"
+                android:layout_height="@dimen/right_arrow_size"
+                android:src="@drawable/ic_down_arrow"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlack"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/_5sdp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_size_medium"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ic_save_btn_bg"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

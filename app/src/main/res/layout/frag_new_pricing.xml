@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.FragNewPricing"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar2"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_x_large"
+                android:text="@string/new_pricing_option"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/duration"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:id="@+id/frag_new_price_layoutDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/frag_new_price_txtDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:text="1h"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_down_arrow"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/price_type"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:id="@+id/frag_new_price_layoutPriceType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/frag_new_price_txtPriceType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:text="Fixed"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_down_arrow"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/retail_price"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee_symbol"
+                    android:textSize="@dimen/font_size_x_large"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textStyle="bold"
+                    android:hint="0.00"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/special_price_optional"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee_symbol"
+                    android:textSize="@dimen/font_size_x_large"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textStyle="bold"
+                    android:hint="0.00"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/pricing_price_optional"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee_symbol"
+                    android:textSize="@dimen/font_size_x_large"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textStyle="bold"
+                    android:hint="0.00"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/_5sdp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_size_medium"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ic_save_btn_bg"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

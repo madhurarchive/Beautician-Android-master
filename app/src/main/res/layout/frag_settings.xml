@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".beautician.fragment.FragSettings"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <include layout="@layout/toolbar2"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_x_large"
+                android:text="@string/settings"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_medium"
+                android:textStyle="bold"
+                android:text="@string/extra_time"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/extra_time_type"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:id="@+id/frag_setting_layoutTimeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/frag_setting_txtTimeType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:text="No extra time"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/right_arrow_size"
+                    android:layout_height="@dimen/right_arrow_size"
+                    android:src="@drawable/ic_down_arrow"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_regular"
+                android:text="@string/blocktime_will_build_in_between"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_medium"
+                android:textStyle="bold"
+                android:text="@string/tax"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_regular"
+                android:text="@string/set_tax_rate_for"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/tax_include_in_price"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:id="@+id/frag_setting_layoutTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/frag_setting_txtTax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:text="No tax"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/right_arrow_size"
+                    android:layout_height="@dimen/right_arrow_size"
+                    android:src="@drawable/ic_down_arrow"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_medium"
+                android:textStyle="bold"
+                android:text="@string/voucher"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/extra_time_type"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_size_medium"
+                    android:text="@string/enable_voucher_sales"
+                    android:layout_weight="1"
+                    />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:thumb="@drawable/custom_thumb"
+                    app:track="@drawable/custom_track"
+                    android:checked="true"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/voucher_exprity_period"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:id="@+id/frag_setting_layoutVoucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/frag_setting_txtVoucher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:text="Default (6 Months)"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/right_arrow_size"
+                    android:layout_height="@dimen/right_arrow_size"
+                    android:src="@drawable/ic_down_arrow"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_medium"
+                android:textStyle="bold"
+                android:text="@string/commission"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/enable_commission"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/calculate_sat_commissions"
+                    android:layout_weight="1"
+                    />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:thumb="@drawable/custom_thumb"
+                    app:track="@drawable/custom_track"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:checked="true"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/_5sdp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_size_medium"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ic_save_btn_bg"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

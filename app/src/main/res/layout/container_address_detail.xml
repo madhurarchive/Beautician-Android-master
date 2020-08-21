@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_address_detail_slider_layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@color/colorWhite"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageView
+        android:id="@+id/container_address_detail_slider_imgClose"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:padding="@dimen/_10sdp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address_details"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/font_size_xx_large"
+            android:fontFamily="@font/bold_font"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/CounterText"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginTop="@dimen/_20sdp"
+            >
+
+            <EditText
+                android:id="@+id/containt_address_details_edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:fontFamily="@font/regular_font"
+                android:textColorHint="@color/colorSecondaryText"
+                android:inputType="text"
+                android:textSize="@dimen/font_size_medium"
+                android:paddingVertical="@dimen/edit_vertical_padding"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/CounterText"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <EditText
+                android:id="@+id/containt_address_details_edtSuburb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/suburb"
+                android:inputType="text"
+                android:fontFamily="@font/regular_font"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="@dimen/font_size_medium"
+                android:paddingVertical="@dimen/edit_vertical_padding"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/CounterText"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <EditText
+                android:id="@+id/containt_address_details_edtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:fontFamily="@font/regular_font"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="@dimen/font_size_medium"
+                android:paddingVertical="@dimen/edit_vertical_padding"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/CounterText"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <EditText
+                android:id="@+id/containt_address_details_edtState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/state"
+                android:inputType="text"
+                android:fontFamily="@font/regular_font"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="@dimen/font_size_medium"
+                android:paddingVertical="@dimen/edit_vertical_padding"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/CounterText"
+            app:hintTextAppearance="@style/HintText"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <EditText
+                android:id="@+id/containt_address_details_edtZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/zip_post_code"
+                android:inputType="text"
+                android:fontFamily="@font/regular_font"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="@dimen/font_size_medium"
+                android:paddingVertical="@dimen/edit_vertical_padding"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine_txtSelect"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        android:layout_above="@+id/containt_address_details_txtSave"
+        />
+
+    <TextView
+        android:id="@+id/containt_address_details_txtSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_size_large"
+        android:background="@drawable/ic_save_btn_bg"
+        android:textAlignment="center"
+        android:fontFamily="@font/regular_font"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

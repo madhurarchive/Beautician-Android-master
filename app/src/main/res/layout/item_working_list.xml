@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/working_hours_layout_width"
+    android:layout_height="@dimen/_40sdp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ic_working_hours_list_bottom_bg"
+    android:padding="@dimen/_3sdp"
+    >
+
+    <TextView
+        android:id="@+id/item_working_list_workingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9:00am - 5:00pm"
+        android:textColor="@color/colorPrimaryText"
+        android:textAlignment="center"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/ic_rect_working_open_bg"
+        />
+
+</LinearLayout>

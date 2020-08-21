@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/working_hours_layout_width"
+    android:layout_height="@dimen/_40sdp"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    android:gravity="center"
+    android:background="@drawable/ic_working_hours_list_bottom_bg"
+    >
+
+    <TextView
+        android:id="@+id/item_staff_list_staff_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="viewStart"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="32h"
+        android:textColor="@color/colorSecondaryText"
+        android:textAlignment="viewStart"
+        />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragSlider1"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@mipmap/img_app_icon"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_menu"
+            android:textColor="@color/colorPrimaryText"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular_font"
+            android:textSize="@dimen/font_size_large"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accessing_your_location_will"
+            android:textColor="@color/colorPrimaryText"
+            android:fontFamily="@font/regular_font"
+            android:textAlignment="center"
+            android:textSize="@dimen/thin_text"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+    </LinearLayout>
+</RelativeLayout>

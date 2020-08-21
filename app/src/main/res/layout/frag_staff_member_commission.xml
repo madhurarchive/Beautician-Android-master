@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/fab_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/bold_font"
+        android:text="@string/service_commission"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_size_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_1x"
+        android:background="@drawable/ic_inventory_product_edit_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_4x"
+            android:layout_marginEnd="@dimen/space_4x"
+            android:fontFamily="@font/helvetica_regular"
+            android:text="@string/percentage_symbol"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_regular" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/smc_edt_commission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/helvetica_regular"
+            android:hint="0.0"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingStart="@dimen/space_4x"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="@dimen/font_size_regular" />
+
+
+    </LinearLayout>
+
+    <Button
+        style="?attr/borderlessButtonStyle"
+        android:id="@+id/smc_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/ic_save_btn_bg"
+        android:fontFamily="@font/medium_font"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_size_regular" />
+
+    <Button
+        style="?attr/borderlessButtonStyle"
+        android:id="@+id/smc_btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/ic_inventory_product_edit_bg"
+        android:fontFamily="@font/medium_font"
+        android:text="@string/cancel"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/font_size_regular" />
+
+    <Button
+        style="?attr/borderlessButtonStyle"
+        android:id="@+id/smc_btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/ic_rad_btn_bg"
+        android:fontFamily="@font/medium_font"
+        android:text="@string/delete"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_size_regular" />
+
+</LinearLayout>

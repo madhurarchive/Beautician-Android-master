@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:layoutDirection="rtl"
+        android:id="@+id/sm_chk_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@android:color/darker_gray"
+        android:checked="true"
+        android:fontFamily="@font/regular_font"
+        android:padding="@dimen/space_4x"
+        android:paddingStart="@dimen/space_3x"
+        android:text="@string/app_name"
+        android:textSize="@dimen/font_size_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack" />
+
+</LinearLayout>

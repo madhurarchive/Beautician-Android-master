@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragNotification"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+
+    <include layout="@layout/toolbar2"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/frag_notification_TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:tabIndicatorColor="@color/colorBlack"
+        app:tabIndicatorHeight="2dp"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorBlack"
+        app:tabTextAppearance="@style/MyCustomTabText"
+        app:tabTextColor="@color/colorSecondaryText"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_2sdp"
+        />
+
+    <com.provider.beautician.helpers.CustomViewPager
+        android:id="@+id/frag_notification_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

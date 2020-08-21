@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:calendarNS="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragStaffWorkingHours"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDivider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        >
+
+        <LinearLayout
+            android:id="@+id/frag_staff_working_hours_layoutStaff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_inventory_product_edit_bg"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/frag_staff_working_hours_txtStaff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_regular"
+                android:textColor="@color/colorBlack"
+                android:text="@string/all_staff"
+                android:padding="@dimen/inventory_new_product_edit_padding"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="@dimen/right_arrow_size"
+                android:layout_height="@dimen/right_arrow_size"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_marginEnd="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_inventory_product_edit_bg"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/frag_staff_working_hours_imgPrevious"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_marginStart="@dimen/_5sdp"
+                />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorSecondaryText"
+                android:layout_marginStart="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/frag_staff_working_hours_txtDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@color/colorSecondaryText"
+                android:text="7 - 13 Jun, 2020"
+                android:textAlignment="center"
+                android:padding="@dimen/inventory_new_product_edit_padding"
+                android:layout_weight="1"
+                />
+
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorSecondaryText"
+                android:layout_marginEnd="@dimen/_5sdp"
+                />
+
+            <ImageView
+                android:id="@+id/frag_staff_working_hours_imgNext"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_right_arrow"
+                android:layout_marginEnd="@dimen/_5sdp"
+                />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/ic_grey_border_bg"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/working_hours_layout_width"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ic_rect_dark_grey_bg"
+                        android:padding="@dimen/_8sdp"
+                        android:visibility="invisible"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/closed"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textAlignment="center"
+                            android:background="@drawable/ic_working_hours_list_tob_bg"
+                            android:layout_weight="1"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_message"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="@dimen/working_hours_layout_width"
+                        android:layout_height="wrap_content"
+                        android:text="Staff"
+                        android:textColor="@color/colorBlack"
+                        android:padding="@dimen/_8sdp"
+                        android:textAlignment="center"
+                        android:background="@drawable/ic_working_hours_list_bottom_bg"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/frag_staff_working_hours_recyclerStaffList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/frag_staff_working_hours_layoutCloseDay1"
+                                android:layout_width="@dimen/working_hours_layout_close_width"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/ic_rect_dark_grey_bg"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:visibility="invisible"
+                                >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/closed"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAlignment="center"
+                                    android:layout_weight="1"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/ic_message"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/frag_staff_working_hours_layoutCloseDay2"
+                                android:layout_width="@dimen/working_hours_layout_close_width"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/ic_rect_dark_grey_bg"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:visibility="invisible"
+                                >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/closed"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAlignment="center"
+                                    android:layout_weight="1"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/ic_message"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/frag_staff_working_hours_layoutCloseDay3"
+                                android:layout_width="@dimen/working_hours_layout_close_width"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/ic_rect_dark_grey_bg"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:visibility="invisible"
+                                >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/closed"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAlignment="center"
+                                    android:layout_weight="1"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/ic_message"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/frag_staff_working_hours_layoutCloseDay4"
+                                android:layout_width="@dimen/working_hours_layout_close_width"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/ic_rect_dark_grey_bg"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:visibility="invisible"
+                                >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/closed"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAlignment="center"
+                                    android:layout_weight="1"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/ic_message"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/frag_staff_working_hours_layoutCloseDay5"
+                                android:layout_width="@dimen/working_hours_layout_close_width"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/ic_rect_dark_grey_bg"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:visibility="invisible"
+                                >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/closed"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAlignment="center"
+                                    android:layout_weight="1"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/ic_message"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/frag_staff_working_hours_layoutCloseDay6"
+                                android:layout_width="@dimen/working_hours_layout_close_width"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/ic_rect_dark_grey_bg"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:visibility="invisible"
+                                >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/closed"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAlignment="center"
+                                    android:layout_weight="1"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/ic_message"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/frag_staff_working_hours_layoutCloseDay7"
+                                android:layout_width="@dimen/working_hours_layout_close_width"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/ic_rect_dark_grey_bg"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:visibility="invisible"
+                                >
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/closed"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textAlignment="center"
+                                    android:layout_weight="1"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/ic_message"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:id="@+id/frag_staff_working_hours_txtDay1"
+                                android:layout_width="@dimen/working_hours_layout_width"
+                                android:layout_height="wrap_content"
+                                android:text="Sun 31 May"
+                                android:textColor="@color/colorBlack"
+                                android:padding="@dimen/_8sdp"
+                                android:textAlignment="center"
+                                android:background="@drawable/ic_working_hours_list_bottom_bg"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/frag_staff_working_hours_txtDay2"
+                                android:layout_width="@dimen/working_hours_layout_width"
+                                android:layout_height="wrap_content"
+                                android:text="Sun 31 May"
+                                android:textColor="@color/colorBlack"
+                                android:padding="@dimen/_8sdp"
+                                android:textAlignment="center"
+                                android:background="@drawable/ic_working_hours_list_bottom_bg"
+                                />
+
+                            <TextView
+                                android:id="@+id/frag_staff_working_hours_txtDay3"
+                                android:layout_width="@dimen/working_hours_layout_width"
+                                android:layout_height="wrap_content"
+                                android:text="Sun 31 May"
+                                android:textColor="@color/colorBlack"
+                                android:padding="@dimen/_8sdp"
+                                android:textAlignment="center"
+                                android:background="@drawable/ic_working_hours_list_bottom_bg"
+                                />
+
+                            <TextView
+                                android:id="@+id/frag_staff_working_hours_txtDay4"
+                                android:layout_width="@dimen/working_hours_layout_width"
+                                android:layout_height="wrap_content"
+                                android:text="Sun 31 May"
+                                android:textColor="@color/colorBlack"
+                                android:padding="@dimen/_8sdp"
+                                android:textAlignment="center"
+                                android:background="@drawable/ic_working_hours_list_bottom_bg"
+                                />
+
+                            <TextView
+                                android:id="@+id/frag_staff_working_hours_txtDay5"
+                                android:layout_width="@dimen/working_hours_layout_width"
+                                android:layout_height="wrap_content"
+                                android:text="Sun 31 May"
+                                android:textColor="@color/colorBlack"
+                                android:padding="@dimen/_8sdp"
+                                android:textAlignment="center"
+                                android:background="@drawable/ic_working_hours_list_bottom_bg"
+                                />
+
+                            <TextView
+                                android:id="@+id/frag_staff_working_hours_txtDay6"
+                                android:layout_width="@dimen/working_hours_layout_width"
+                                android:layout_height="wrap_content"
+                                android:text="Sun 31 May"
+                                android:textColor="@color/colorBlack"
+                                android:padding="@dimen/_8sdp"
+                                android:textAlignment="center"
+                                android:background="@drawable/ic_working_hours_list_bottom_bg"
+                                />
+
+                            <TextView
+                                android:id="@+id/frag_staff_working_hours_txtDay7"
+                                android:layout_width="@dimen/working_hours_layout_width"
+                                android:layout_height="wrap_content"
+                                android:text="Sun 31 May"
+                                android:textColor="@color/colorBlack"
+                                android:padding="@dimen/_8sdp"
+                                android:textAlignment="center"
+                                android:background="@drawable/ic_working_hours_list_bottom_bg"
+                                />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/frag_staff_working_hours_recyclerHoursList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

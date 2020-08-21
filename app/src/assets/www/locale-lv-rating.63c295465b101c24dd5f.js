@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[216],{pBdw:function(a,n){a.exports={domain:"rating",locale_data:{rating:{"":{domain:"rating",plural_forms:"nplurals=3; plural=(n==0 ? 0 : n%10==1 && n%100!=11 ? 1 : 2);",lang:"lv_LV"},Terrible:[""],Bad:[""],Okay:[""],Good:[""],Great:[""],"No ratings":[""],"1 rating":[""],"%{ratingCount} ratings":[""]}}}}}]);

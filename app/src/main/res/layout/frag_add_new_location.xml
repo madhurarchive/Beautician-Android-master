@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold_font"
+                android:text="@string/new_location"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_x_large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/business_info_desc"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_6x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/location_name"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <EditText
+                android:id="@+id/location_edt_location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/location_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/contact_number"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <EditText
+                android:id="@+id/location_edt_contact_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/contact_number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <View
+                android:layout_marginTop="@dimen/space_3x"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/contact_email"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <EditText
+                android:id="@+id/location_edt_contact_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/contact_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <View
+                android:layout_marginTop="@dimen/space_3x"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_3x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/replies_to_client_appointment"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/street_address"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <AutoCompleteTextView
+                android:id="@+id/location_edt_street_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/street_address"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <View
+                android:layout_marginTop="@dimen/space_3x"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <EditText
+                android:id="@+id/location_edt_optional_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/optional_address"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColorHint="@color/colorPrimaryText"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <View
+                android:layout_marginTop="@dimen/space_3x"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/city"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <EditText
+                android:id="@+id/location_edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/city"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <View
+                android:layout_marginTop="@dimen/space_3x"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/state"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <EditText
+                android:id="@+id/location_edt_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/state"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <View
+                android:layout_marginTop="@dimen/space_3x"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4x"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/zip_code"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <EditText
+                android:id="@+id/location_edt_zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/helvetica_regular"
+                android:hint="@string/zip_code"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingTop="@dimen/space_2x"
+                android:paddingBottom="@dimen/space_2x"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_regular" />
+
+            <View
+                android:layout_marginTop="@dimen/space_3x"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+        </LinearLayout>
+
+
+        <Button
+            style="?attr/borderlessButtonStyle"
+            android:id="@+id/location_btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_7x"
+            android:layout_marginTop="@dimen/space_6x"
+            android:layout_marginEnd="@dimen/space_7x"
+            android:background="@drawable/ic_save_btn_bg"
+            android:fontFamily="@font/medium_font"
+            android:text="@string/save"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_size_regular" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/ParentLayout_of_toolbar" android:layout_width="match_parent"
+    android:layout_height="@dimen/_47sdp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/toolbar2_imgBack"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_13sdp"
+        android:src="@drawable/ic_back_icon" />
+
+    <RelativeLayout
+        android:id="@+id/rltoolbar2_Date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/toolbar2_txtHeaderName"
+            android:maxLength="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/bold_font"
+            android:includeFontPadding="false"
+            android:text="19 July 2020"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_medium" />
+
+        <TextView
+            android:layout_below="@+id/toolbar2_txtHeaderName"
+            android:id="@+id/toolbar2_txtHeaderName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold_font"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_5sdp"
+            android:maxLength="20"
+            android:text="Sunday at 12:15pm"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/toolbar2_imgMenu"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_14sdp"
+        android:src="@drawable/ic_close"
+        android:visibility="invisible" />
+
+</LinearLayout>

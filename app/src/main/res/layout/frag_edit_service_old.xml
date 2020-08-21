@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.provider.beautician.fragment.FragEditService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar2" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold_font"
+                    android:text="@string/edit_service"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_size_x_large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/service_name"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/regular_font"
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding"
+                    android:text="Blow Dry"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/treatment_type"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/regular_font"
+                        android:text="Haircuts and Hairdressing"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/choose_the_most_relevant_type"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_regular" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/bold_font"
+                    android:text="@string/prices"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_x_large" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/duration"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding">
+
+                    <TextView
+                        android:id="@+id/frag_edit_service_txtDuration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/regular_font"
+                        android:includeFontPadding="false"
+                        android:text="1h 30min"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/price_type"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutPriceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding">
+
+                    <TextView
+                        android:id="@+id/frag_edit_service_txtPriceType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/regular_font"
+                        android:includeFontPadding="false"
+                        android:text="Fixed"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/retail_price"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular_font"
+                        android:includeFontPadding="false"
+                        android:text="@string/rupee_symbol"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/colorWhite"
+                        android:fontFamily="@font/regular_font"
+                        android:imeOptions="actionNext"
+                        android:includeFontPadding="false"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/service_input_field_bottom_padding"
+                        android:text="0.00"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/special_price_optional"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular_font"
+                        android:text="@string/rupee_symbol"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/colorWhite"
+                        android:fontFamily="@font/regular_font"
+                        android:imeOptions="actionNext"
+                        android:includeFontPadding="false"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/service_input_field_bottom_padding"
+                        android:text="0.00"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/pricing_name_optional"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/regular_font"
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding"
+                    android:text="e.g. Long hair"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutAddNewPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:fontFamily="@font/regular_font"
+                        android:includeFontPadding="false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/add_another_pricing_option"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:src="@drawable/ic_add_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+
+                <TextView
+                    android:fontFamily="@font/bold_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="@string/other_options"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_x_large" />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutStaff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/regular_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/staff"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_size_medium"/>
+
+                        <TextView
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/regular_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2 staff assigned"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_size_regular" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_size"
+                        android:layout_height="@dimen/right_arrow_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_right_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/service_input_field_bottom_padding"
+                    android:background="@color/colorBlack" />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutOnlineBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/online_booking"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_size_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="Enabled"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_size_regular" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_size"
+                        android:layout_height="@dimen/right_arrow_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_right_icon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/colorBlack" />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_size_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="Custome"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_size_regular" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_size"
+                        android:layout_height="@dimen/right_arrow_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_right_icon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/colorBlack" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_rad_btn_bg"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/delete"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_save_btn_bg"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/save"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/containt_slider_location" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

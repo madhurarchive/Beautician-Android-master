@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtHeaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ParentLayout_of_toolbar"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/bold_font"
+        android:includeFontPadding="false"
+        android:maxLength="20"
+        android:text="19 July 2020"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_size_medium" />
+
+    <TextView
+        android:id="@+id/txtHeaderName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeaderName"
+        android:fontFamily="@font/bold_font"
+        android:includeFontPadding="false"
+        android:maxLength="20"
+        android:padding="@dimen/_5sdp"
+        android:text="Sunday at 12:15pm"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/btNewAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeaderName2"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:background="@drawable/bg_new_appointment"
+        android:drawableStart="@drawable/star_drawable_button"
+        android:drawableEnd="@drawable/down_arrow_small_appointment_button"
+        android:elevation="@dimen/_5sdp"
+        android:fontFamily="@font/bold_font"
+        android:padding="@dimen/_10sdp"
+        android:text="New Appointment"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rlClient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_below="@+id/btNewAppointment"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_circular_single_letter_left_icon"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentLeft="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="match_parent"
+                android:background="@drawable/drawable_left_button_client" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLength="1"
+                android:text="N"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_20sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlRightArrow"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_toRightOf="@+id/rl_circular_single_letter_left_icon">
+
+            <TextView
+                android:id="@+id/tvNil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/regular_font"
+                android:text="Nil"
+
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_20sdp" />
+
+            <ImageView
+                android:id="@+id/ivDialogOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vwUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/rlClient"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/greyed_out" />
+
+    <TextView
+        android:id="@+id/tvAppointmentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vwUnderline"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/bold_font"
+        android:gravity="center_vertical"
+        android:text="Appointment Details"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAppointmentFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppointmentDetails"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/regular_font"
+        android:text="Repeats daily until Sunday, 19 Jul 2020 (5 times)"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppointmentFrequency"
+        android:layout_marginTop="@dimen/_10sdp" />
+    <TextView
+        android:layout_below="@+id/rv"
+        android:id="@+id/tvLabelAppointmentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/bold_font"
+        android:text="Appointment History"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15sdp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAppointmentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLabelAppointmentHistory"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+</RelativeLayout>
+</ScrollView>

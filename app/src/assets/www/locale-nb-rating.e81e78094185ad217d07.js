@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[226],{e0Rb:function(a,n){a.exports={domain:"rating",locale_data:{rating:{"":{domain:"rating",plural_forms:"nplurals=2; plural=(n != 1);",lang:"nb_NO"},Terrible:["Forferdelig"],Bad:["Dårlig"],Okay:["Greit"],Good:["Bra"],Great:["Fantastisk"],"No ratings":[""],"1 rating":[""],"%{ratingCount} ratings":[""]}}}}}]);

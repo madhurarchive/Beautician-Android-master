@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_clients_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center_vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_grey_circle"
+        android:layout_gravity="center"
+        android:padding="@dimen/_3sdp"
+        >
+        <TextView
+            android:id="@+id/frag_menu_txtNameFirstWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_x_large"
+            android:text="J"
+            android:textAllCaps="true"
+            android:fontFamily="@font/helvetica_regular"
+                android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/frag_menu_imgUser"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@mipmap/app_icon"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/item_clients_list_txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/helvetica_regular"
+            android:textColor="@color/colorPrimaryText"
+            android:text="@string/app_name"
+            android:textSize="@dimen/font_size_medium"
+            android:ellipsize="end"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/item_clients_list_txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/helvetica_regular"
+            android:textColor="@color/colorPrimaryText"
+            android:text="@string/app_name"
+            android:textSize="@dimen/font_size_small"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/right_arrow_size"
+        android:layout_height="@dimen/right_arrow_size"
+        android:src="@drawable/ic_right_icon"
+        />
+</LinearLayout>

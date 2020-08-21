@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragEditProfile"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+
+    <include layout="@layout/toolbar2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <LinearLayout
+                android:id="@+id/frag_edit_profile_layoutImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_105sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/frag_edit_profile_imgUser"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@mipmap/ic_launcher_round"
+                        android:background="@drawable/ic_img_circle"
+                        android:padding="@dimen/_1sdp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/frag_edit_profile_imgAdd"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:src="@drawable/ic_img_add"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/ic_white_circle"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_profile_photo"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/font_size_regular"
+                android:fontFamily="@font/bold_font"
+                android:textColor="@color/colorSkyBlue"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_details"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_large"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/bold_font"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set_your_name_and_contact"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_regular"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/regular_font"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                >
+                <EditText
+                    android:id="@+id/frag_edit_profile_editFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/first_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                >
+                <EditText
+                    android:id="@+id/frag_edit_profile_editLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical">
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/frag_edit_profile_countryCodePicker"
+                    app:ccp_textSize="@dimen/font_size_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:ccp_defaultNameCode="US"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/frag_edit_profile_editMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/mobile"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/space_4x"
+                    android:paddingBottom="@dimen/space_4x"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryText"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                >
+                <EditText
+                    android:id="@+id/frag_edit_profile_editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_large"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/bold_font"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to_make_an_update_enter_your"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_regular"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/regular_font"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorBlack"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <EditText
+                    android:id="@+id/frag_edit_profile_editCurrentPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/current_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorBlack"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <EditText
+                    android:id="@+id/frag_edit_profile_editNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorBlack"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <EditText
+                    android:id="@+id/frag_edit_profile_editVerifyPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:hint="@string/verify_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_notification_settings"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_large"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/bold_font"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/receive_notification_about"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/regular_font"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_regular"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/frag_edit_profile_layoutNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/my_notification_settings"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/right_arrow_size"
+                    android:layout_height="@dimen/right_arrow_size"
+                    android:src="@drawable/ic_right_icon"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <TextView
+                    android:id="@+id/frag_edit_profile_txtSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/ic_save_btn_bg"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/save"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/medium_font"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

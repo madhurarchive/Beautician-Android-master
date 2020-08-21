@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/placeholderTextHeight"
+                    android:background="@color/colorLightGrey" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/placeholderTextHeight"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorLightGrey" />
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="@dimen/placeholderTextHeight"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorLightGrey" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.CardView>
+
+
+</RelativeLayout>

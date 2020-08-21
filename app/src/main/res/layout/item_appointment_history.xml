@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tvAppointmentDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/regular_font"
+        android:text="Tue, 14 Jul 2020 at 12:08pm"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"/>
+
+    <TextView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_below="@+id/tvAppointmentDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/regular_font"
+        android:text="Booked by Archive, reference 4D933C25"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_13sdp"/>
+</RelativeLayout>

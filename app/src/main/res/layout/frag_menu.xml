@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.provider.beautician.fragment.FragMenu"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@mipmap/img_search_icon"
+        android:padding="@dimen/_2sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_gravity="end"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/frag_menu_layoutMyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_blue_circle"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    >
+                    <TextView
+                        android:fontFamily="@font/bold_font"
+                        android:id="@+id/frag_menu_txtNameFirstWord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_30ssp"
+                        android:text="A"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/_20sdp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/frag_menu_imgUser"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@mipmap/app_icon"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:fontFamily="@font/bold_font"
+                    android:id="@+id/frag_menu_txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_27ssp"
+                    android:textAlignment="center"
+                    android:text="Archive Info"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center|center_vertical"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/regular_font"
+                        android:id="@+id/frag_menu_txtMyProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textAlignment="center"
+                        android:text="@string/my_profile"
+                        android:textColor="@color/colorPrimaryText"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/frag_menu_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:nestedScrollingEnabled="false"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

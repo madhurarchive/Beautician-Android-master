@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragActivity"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@mipmap/img_notification_icon"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_notifications_yet"
+            android:textColor="@color/colorPrimaryText"
+            android:fontFamily="@font/bold_font"
+            android:textSize="@dimen/font_size_x_large"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/frag_activity_txtClickHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_do_not_have_any_notification_yet"
+            android:textColor="@color/splesh_txt_color"
+            android:fontFamily="@font/regular_font"
+            android:textSize="@dimen/font_size_small"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

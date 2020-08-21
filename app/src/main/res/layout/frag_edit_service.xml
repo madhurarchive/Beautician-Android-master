@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.provider.beautician.fragment.FragEditService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar2" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold_font"
+                    android:text="@string/edit_service"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_size_x_large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/service_name"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/regular_font"
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding"
+                    android:text="Blow Dry"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:fontFamily="@font/regular_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/service_available_for"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/regular_font"
+                        android:id="@+id/frag_edit_service_txtService"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="1"
+                        android:text="Everyone"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_size"
+                        android:layout_height="@dimen/right_arrow_size"
+                        android:src="@drawable/ic_down_arrow"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/duration"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:id="@+id/frag_edit_service_layoutDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/service_input_field_bottom_padding">
+
+                    <TextView
+                        android:id="@+id/frag_edit_service_txtDuration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/regular_font"
+                        android:includeFontPadding="false"
+                        android:text="1h 30min"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/price"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular_font"
+                        android:includeFontPadding="false"
+                        android:text="@string/rupee_symbol"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/colorWhite"
+                        android:fontFamily="@font/regular_font"
+                        android:imeOptions="actionNext"
+                        android:includeFontPadding="false"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/service_input_field_bottom_padding"
+                        android:hint="0.00"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:fontFamily="@font/bold_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="@string/staff"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_x_large" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/space_3x"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/regular_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_staff_selection_subheading"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/frag_edit_service_rv_staff"
+                    android:layout_marginTop="@dimen/space_3x"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_rad_btn_bg"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/delete"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_save_btn_bg"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/save"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/containt_slider_location" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

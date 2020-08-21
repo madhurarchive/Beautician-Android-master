@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detail_backdrop_height">300dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+    <dimen name="list_all_categories_text_size">14sp</dimen>
+    <dimen name="filter_drawer_footer_text">14sp</dimen>
+    <dimen name="home_card_item_text">16sp</dimen>
+    <dimen name="home_button_text">16sp</dimen>
+    <dimen name="home_button_height">48dp</dimen>
+    <dimen name="login_fb_text">18sp</dimen>
+
+    <!--navigation drawer layout-->
+    <dimen name="nav_drawer_icon">32dp</dimen>
+    <dimen name="nav_drawer_text">16sp</dimen>
+    <dimen name="nav_drawer_row_padding">8dp</dimen>
+    <dimen name="nav_drawer_icon_right_margin">8dp</dimen>
+
+    <!--toolbar layout-->
+    <dimen name="toolbar_header_text">18sp</dimen>
+
+    <!--shimmer layout-->
+    <dimen name="placeholderTextHeight">8dp</dimen>
+    <dimen name="placeholderImageSize">96dp</dimen>
+
+    <!--list layout-->
+    <dimen name="list_header">16sp</dimen>
+    <dimen name="list_content">14sp</dimen>
+
+
+    <!--dimes for app view spacing-->
+    <dimen name="space_1x">@dimen/_2sdp</dimen>
+    <dimen name="space_2x">@dimen/_4sdp</dimen>
+    <dimen name="space_3x">@dimen/_6sdp</dimen>
+    <dimen name="space_4x">@dimen/_10sdp</dimen>
+    <dimen name="space_5x">@dimen/_18sdp</dimen>
+    <dimen name="space_6x">@dimen/_26sdp</dimen>
+    <dimen name="space_7x">@dimen/_34sdp</dimen>
+    <dimen name="space_8x">@dimen/_50sdp</dimen>
+
+    <!--common text size-->
+    <dimen name="extra_thin_text">@dimen/_9ssp</dimen>
+    <dimen name="thin_text">@dimen/_10ssp</dimen>
+    <dimen name="font_size_small">@dimen/_11ssp</dimen>
+    <dimen name="font_size_regular">@dimen/_13ssp</dimen>
+    <dimen name="font_size_medium">@dimen/_15ssp</dimen>
+    <dimen name="font_size_large">@dimen/_17ssp</dimen>
+    <dimen name="font_size_x_large">@dimen/_19ssp</dimen>
+    <dimen name="font_size_xx_large">@dimen/_21ssp</dimen>
+    <dimen name="font_size_xxx_large">@dimen/_23ssp</dimen>
+
+    <dimen name="right_arrow_size">@dimen/_12sdp</dimen>
+    <dimen name="edit_vertical_padding">@dimen/_15sdp</dimen>
+    <dimen name="layout_padding">@dimen/_10sdp</dimen>
+    <dimen name="inventory_new_product_edit_padding">@dimen/_8sdp</dimen>
+    <dimen name="working_hours_layout_width">@dimen/_120sdp</dimen>
+    <dimen name="working_hours_layout_close_width">@dimen/_110sdp</dimen>
+    <dimen name="button_padding">@dimen/_10sdp</dimen>
+    <dimen name="staff_member_main_text_size">@dimen/_130sdp</dimen>
+    <dimen name="staff_member_main_text_padding">@dimen/_10sdp</dimen>
+
+    <dimen name="default_padding">@dimen/_16sdp</dimen>
+    <dimen name="edit_bottom_padding">@dimen/_20sdp</dimen>
+
+    <!--service add/edit form-->
+    <dimen name="service_input_field_bottom_padding">@dimen/_8sdp</dimen>
+
+</resources>

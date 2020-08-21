@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[284],{Ra8O:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return s}));var a=t("q1tI"),r=t.n(a),o=t("Ty5D"),c=t("5IZQ"),p=t("Fd3X");class s extends a.PureComponent{render(){return r.a.createElement(o.b,{path:c.a,component:p.a})}}}}]);

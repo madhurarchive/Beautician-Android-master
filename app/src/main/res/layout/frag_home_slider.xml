@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragHomeSlider">
+
+    <com.provider.beautician.helpers.CustomViewPagerWithScroll
+        android:id="@+id/frag_home_slider_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/frag_home_slider_dots_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        />
+
+    <LinearLayout
+        android:id="@+id/frag_home_slider_layoutContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continues"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_large"
+            android:textAllCaps="true"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_right_icon"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/toolbar2"/>
+
+</RelativeLayout>

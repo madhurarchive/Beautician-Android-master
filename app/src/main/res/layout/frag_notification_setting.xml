@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.provider.beautician.fragment.FragNotificationSetting"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/toolbar2"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_10sdp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryText"
+                    android:fontFamily="@font/bold_font"
+                    android:textSize="@dimen/font_size_x_large"
+                    android:text="@string/my_notification_settings"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/choose_which_types_of_noti"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryText"
+                    android:fontFamily="@font/bold_font"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/font_size_x_large"
+                    android:text="@string/appointment_notifications"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/frag_notification_setting_txtLearnMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_small"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:text="@string/choose_which_types_of_notifications_yor"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:textSize="@dimen/font_size_regular"
+                    android:text="@string/notify_me_about"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/frag_notification_setting_layoutAppointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/ic_inventory_product_edit_bg"
+                    >
+
+                    <TextView
+                        android:id="@+id/frag_notification_setting_txt_appointment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium"
+                        android:text="@string/appointment_booked_with_all"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_notification_setting_layoutLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/frag_notification_setting_txtLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/font_size_medium"
+                        android:text="Archive infotech"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_right_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/frag_notification_setting_viewLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryText"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/frag_notification_setting_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/notification_setting_btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size_large"
+                    android:background="@drawable/ic_save_btn_bg"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/helvetica_regular"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/containt_slider_location" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

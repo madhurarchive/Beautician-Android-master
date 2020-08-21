@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_close_date_handleView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/item_close_date_txtDateRange"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/staff_member_main_text_padding"
+        android:paddingBottom="@dimen/staff_member_main_text_padding"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:fontFamily="@font/regular_font"
+        android:textSize="@dimen/extra_thin_text"
+        android:layout_marginStart="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/item_close_date_txtDays"
+        android:layout_width="@dimen/staff_member_main_text_size"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/staff_member_main_text_padding"
+        android:paddingBottom="@dimen/staff_member_main_text_padding"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/extra_thin_text"
+        android:textAllCaps="true"
+        android:fontFamily="@font/regular_font"
+        />
+
+    <TextView
+        android:id="@+id/item_close_date_txtLocations"
+        android:layout_width="@dimen/staff_member_main_text_size"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/staff_member_main_text_padding"
+        android:paddingBottom="@dimen/staff_member_main_text_padding"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:fontFamily="@font/regular_font"
+        android:textSize="@dimen/extra_thin_text"
+        />
+
+    <TextView
+        android:id="@+id/item_close_date_txtDescription"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/staff_member_main_text_padding"
+        android:paddingBottom="@dimen/staff_member_main_text_padding"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:fontFamily="@font/regular_font"
+        android:textSize="@dimen/extra_thin_text"
+        />
+</LinearLayout>

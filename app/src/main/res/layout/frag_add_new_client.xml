@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".fragment.FragAddNewClient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/toolbar2" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/frag_add_new_client_txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_client"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_x_large"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:hintTextAppearance="@style/HintText"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/frag_add_new_client_edtFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/first_name"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:textColorHint="@color/colorSecondaryText"
+                        android:inputType="text"
+                        android:textSize="@dimen/font_size_medium"
+                        android:paddingVertical="@dimen/edit_vertical_padding"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:hintTextAppearance="@style/HintText"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+                    <EditText
+                        android:id="@+id/frag_add_new_client_edtLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/last_name"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:textColorHint="@color/colorSecondaryText"
+                        android:inputType="text"
+                        android:textSize="@dimen/font_size_medium"
+                        android:paddingVertical="@dimen/edit_vertical_padding"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_1x"
+                    android:gravity="center_vertical">
+
+                    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                        app:ccp_textSize="@dimen/font_size_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        app:ccp_defaultNameCode="US"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/frag_add_new_client_edtMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:textColorHint="@color/colorSecondaryText"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/mobile"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/space_4x"
+                        android:paddingBottom="@dimen/space_4x"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryText"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+                    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                        app:ccp_textSize="@dimen/font_size_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        app:ccp_defaultNameCode="US"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/frag_add_new_client_edtTelephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:textColorHint="@color/colorSecondaryText"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/telephone"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/space_4x"
+                        android:paddingBottom="@dimen/space_4x"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryText"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:hintTextAppearance="@style/HintText"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/frag_add_new_client_edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:textColorHint="@color/colorSecondaryText"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/font_size_medium"
+                        android:paddingVertical="@dimen/edit_vertical_padding"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/send_notifications"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/frag_add_new_client_layoutNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/frag_add_new_client_txtNotification"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="1"
+                        android:text="Email &amp; SMS"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_size"
+                        android:layout_height="@dimen/right_arrow_size"
+                        android:src="@drawable/ic_down_arrow"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/preferred_language"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/frag_add_new_client_layoutLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/frag_add_new_client_txtLanguage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_down_arrow"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"/>
+
+
+                <LinearLayout
+                    android:id="@+id/frag_add_new_client_layoutAcceptNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/font_size_medium"
+                        android:text="@string/accepts_marketing_notifications"
+                        android:layout_weight="1"
+                        />
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/frag_add_new_client_switchAcceptNotification"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:thumb="@drawable/custom_thumb"
+                        app:track="@drawable/custom_track"
+                        android:checked="true"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/client_notes"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/font_size_x_large"
+                    android:fontFamily="@font/bold_font"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:hintTextAppearance="@style/HintText"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/frag_add_new_client_edtClientNotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/client_notes"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:textColorHint="@color/colorSecondaryText"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:textSize="@dimen/font_size_medium"
+                        android:paddingVertical="@dimen/edit_vertical_padding"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/frag_add_new_client_layoutSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clickable="false"
+                    >
+
+                    <TextView
+                        android:id="@+id/frag_add_new_client_txtSwitch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="@dimen/font_size_medium"
+                        android:text="@string/display_on_all_bookings"
+                        android:layout_weight="1"
+                        />
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/frag_add_new_client_switch"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:thumb="@drawable/custom_thumb"
+                        app:track="@drawable/custom_track"
+                        android:clickable="false"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/frag_add_new_client_layoutPersonalInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textColor="@color/colorPrimaryText"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:layout_weight="1"
+                        android:text="@string/personal_info"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_size"
+                        android:layout_height="@dimen/right_arrow_size"
+                        android:src="@drawable/ic_right_icon"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"/>
+
+
+                <LinearLayout
+                    android:id="@+id/frag_add_new_client_layoutAddressDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textColor="@color/colorPrimaryText"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/helvetica_regular"
+                        android:text="@string/address_details"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/right_arrow_size"
+                        android:layout_height="@dimen/right_arrow_size"
+                        android:src="@drawable/ic_right_icon"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+            <TextView
+                android:id="@+id/frag_add_new_client_txtSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/ic_save_btn_bg"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/save"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_size_medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/container_personal_info" />
+    <include layout="@layout/container_address_detail" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

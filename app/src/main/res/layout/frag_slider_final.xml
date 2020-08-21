@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragSliderFinal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_re_all_set"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:fontFamily="@font/helvetica_regular"
+            android:textSize="@dimen/font_size_xx_large"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accessing_your_location_will"
+            android:textColor="@color/colorPrimaryText"
+            android:textAlignment="center"
+            android:fontFamily="@font/helvetica_regular"
+            android:textSize="@dimen/thin_text"
+            android:layout_marginTop="@dimen/_12sdp"
+            />
+
+        <TextView
+            android:id="@+id/frag_slider_final_txtGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_calendar"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ic_save_btn_bg"
+            android:textAlignment="center"
+            android:fontFamily="@font/helvetica_regular"
+            android:textSize="@dimen/font_size_regular"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:padding="@dimen/_15sdp"
+            android:textAllCaps="true"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

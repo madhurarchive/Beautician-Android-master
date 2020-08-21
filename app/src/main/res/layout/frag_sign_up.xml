@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".fragment.FragSignUp">
+
+    <include layout="@layout/toolbar2" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+                <EditText
+                    android:id="@+id/frag_sign_up_editFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/first_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+                <EditText
+                    android:id="@+id/frag_sign_up_editLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                >
+                <EditText
+                    android:id="@+id/frag_sign_up_editMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                >
+                <EditText
+                    android:id="@+id/frag_sign_up_editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorBlack"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                >
+                <EditText
+                    android:id="@+id/frag_sign_up_editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/CounterText"
+                app:hintTextAppearance="@style/HintText"
+                >
+                <EditText
+                    android:id="@+id/frag_sign_up_editCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular_font"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/company_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:paddingBottom="@dimen/edit_bottom_padding"
+                    android:textSize="@dimen/font_size_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/frag_sign_up_layoutTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                >
+
+                <CheckBox
+                    android:id="@+id/frag_sign_up_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:buttonTint="@color/colorSkyBlue"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    />
+
+                <TextView
+                    android:id="@+id/frag_sign_up_txtTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular_font"
+                    android:text="@string/agree_privacy_policy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_size_small"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frag_sign_up_txtSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/ic_save_btn_bg"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/sign_up"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_size_medium" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular_font"
+                android:text="@string/already_have_a_professional_account"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_small"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+            <TextView
+                android:id="@+id/frag_sign_up_txtSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular_font"
+                android:text="@string/sign_in_now"
+                android:textAlignment="center"
+                android:textColor="@color/colorSkyBlue"
+                android:textSize="@dimen/font_size_small"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/colorSecondaryText"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_size_xx_large"
+                android:fontFamily="@font/regular_font"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/or_connect_with"
+                android:textColor="@color/colorSecondaryText"
+                android:textAlignment="center"
+                android:textSize="@dimen/thin_text"
+                android:fontFamily="@font/regular_font"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+
+                <ImageView
+                    android:id="@+id/frag_sign_up_imgFB"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@mipmap/img_facebook_icon"
+                    />
+
+                <ImageView
+                    android:id="@+id/frag_sign_up_imgGmail"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@mipmap/img_gmail_icon"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

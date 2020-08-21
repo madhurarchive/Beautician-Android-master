@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bottom_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@color/colorTransparentBlack"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:layout_alignParentBottom="true"
+    >
+
+    <ImageView
+        android:id="@+id/layout_bottom_imgCalender"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_file_icon"
+        android:layout_weight="1"
+        android:padding="@dimen/_2sdp"
+        />
+
+    <ImageView
+        android:id="@+id/layout_bottom_imgBookmark"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_page_icon"
+        android:layout_weight="1"
+        android:padding="@dimen/_2sdp"
+        />
+
+    <ImageView
+        android:id="@+id/layout_bottom_imgUserIcon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_contect_icon"
+        android:layout_weight="1"
+        android:padding="@dimen/_2sdp"
+        />
+
+    <ImageView
+        android:id="@+id/layout_bottom_imgNotification"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_bell_icon"
+        android:layout_weight="1"
+        android:padding="@dimen/_2sdp"
+        />
+
+    <ImageView
+        android:id="@+id/layout_bottom_imgHamburger"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_mores_icon"
+        android:layout_weight="1"
+        android:padding="@dimen/_2sdp"
+        />
+
+</LinearLayout>

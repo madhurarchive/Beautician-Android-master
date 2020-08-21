@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular_font"
+            android:text="12:15pm"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/rlTime">
+
+        <TextView
+            android:id="@+id/tvJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/bold_font"
+            android:text="Haircut"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/tvBillPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/bold_font"
+            android:text="Rs. 25"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTimeElapsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlJob"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvTimeElapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/regular_font"
+            android:text="1h 20min with Archivr Info"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+</RelativeLayout>

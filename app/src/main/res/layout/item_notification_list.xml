@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_notification_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp"
+        android:gravity="center_vertical"
+        >
+
+
+        <CheckBox
+            android:id="@+id/item_notification_list_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:buttonTint="@color/colorSkyBlue"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:id="@+id/item_notification_list_txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_medium"
+                android:text="@string/app_name"
+                />
+
+            <TextView
+                android:id="@+id/item_notification_list_txtSubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/font_size_small"
+                android:text="@string/app_name"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

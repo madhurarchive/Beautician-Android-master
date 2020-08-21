@@ -1,0 +1,89 @@
+{
+  "project_info": {
+    "project_number": "208762252757",
+    "firebase_url": "https://metime-5d74e.firebaseio.com",
+    "project_id": "metime-5d74e",
+    "storage_bucket": "metime-5d74e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208762252757:android:9c76ee3f693783887b215c",
+        "android_client_info": {
+          "package_name": "com.provider.beautician"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208762252757-4h8ue95b2p5a1fgmnid61lhk3d13vcc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUzzFYshH6zu8VZD5Jjne8PAXBPPJFCTI"
+        },
+        {
+          "current_key": "AIzaSyBsrKS-HPyySytP17HQg0qkz_siZgjsAjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208762252757-4h8ue95b2p5a1fgmnid61lhk3d13vcc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "208762252757-52oph45n5n5po1g9pc0bou51sp51epgr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.provider.beautician"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208762252757:android:65621727808d58817b215c",
+        "android_client_info": {
+          "package_name": "com.snip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208762252757-4h8ue95b2p5a1fgmnid61lhk3d13vcc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUzzFYshH6zu8VZD5Jjne8PAXBPPJFCTI"
+        },
+        {
+          "current_key": "AIzaSyBsrKS-HPyySytP17HQg0qkz_siZgjsAjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208762252757-4h8ue95b2p5a1fgmnid61lhk3d13vcc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "208762252757-52oph45n5n5po1g9pc0bou51sp51epgr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.provider.beautician"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

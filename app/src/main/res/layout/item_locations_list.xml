@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingStart="@dimen/_24sdp"
+    android:paddingEnd="@dimen/_24sdp"
+    android:background="@color/colorVeryLightGrey"
+    android:gravity="center_vertical">
+    
+    <ImageView
+        android:layout_marginEnd="@dimen/space_2x"
+        android:src="@mipmap/img_address_icon"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/location_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica_regular"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/font_size_regular" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:id="@+id/location_txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/space_3x"
+                android:layout_toStartOf="@+id/location_img_options"
+                android:fontFamily="@font/helvetica_regular"
+                android:text="@string/app_name"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/font_size_small" />
+
+            <ImageView
+                android:padding="@dimen/_4sdp"
+                android:id="@+id/location_img_options"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_there_dots" />
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    
+
+
+</LinearLayout>

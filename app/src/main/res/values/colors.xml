@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--app theme color-->
+    <color name="colorPrimary">#403e7c</color>
+    <color name="colorPrimaryDark">#32305b</color>
+    <color name="colorAccent">#2BB673</color>
+
+    <!--app text color-->
+    <color name="colorPrimaryText">#101928</color>
+    <color name="colorSecondaryText">#A7A9AC</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparentBlackOld">#63000000</color>
+    <color name="colorTransparentBlack">#63B3BBC6</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorNoInternetDialogBg">#E8E8E8</color>
+
+    <!--snackbar background color-->
+    <color name="colorGreen">#2BB673</color>
+    <color name="colorRed">#ED1C24</color>
+    <color name="colorDarkYellow">#AF9100</color>
+
+    <!--divider color-->
+    <color name="colorDivider">#A7A9AC</color>
+    <color name="colorSkyBlue">#00AEEF</color>
+    <color name="colorLightBlue">#00A79D</color>
+    <color name="colorBlue_like_button">#2078C2</color>
+    <color name="colorOrange_arrive_button">#F4A821</color>
+    <color name="colorGreen_started_button">#00BDAD</color>
+
+    <!--shimmer item view color-->
+    <color name="colorLightGrey">#E0E0E0</color>
+
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+    <color name="splesh_txt_color">#808285</color>
+
+    <!--uttam-->
+    <color name="colorPicker1">#B2EBF2</color>
+    <color name="colorPicker2">#BBDEFB</color>
+    <color name="colorPicker3">#C5CAE9</color>
+    <color name="colorPicker4">#D1C4E9</color>
+    <color name="colorPicker5">#F8BBD0</color>
+    <color name="colorPicker6">#FFCDD2</color>
+    <color name="colorPicker7">#FFCCBC</color>
+    <color name="colorPicker8">#FFE0B2</color>
+    <color name="colorPicker9">#F0F4C3</color>
+    <color name="colorPicker10">#DCEDC8</color>
+    <color name="colorVeryLightGrey">#F7F7F7</color>
+    <color name="colorLightSkyBlue">#d9effd</color>
+
+</resources>

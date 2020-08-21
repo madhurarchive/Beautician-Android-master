@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:mContext="com.provider.beautician.fragment.FragHome">
+
+
+    <TextView
+        android:id="@+id/frag_staff_close_date_txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/coming_soon"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_medium"
+        android:fontFamily="@font/regular_font"
+        />
+
+</RelativeLayout>
