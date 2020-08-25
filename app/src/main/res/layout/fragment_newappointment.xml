@@ -85,15 +85,20 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:fontFamily="@font/regular_font"
+
                     android:id="@+id/tvDateAndTime"
                     android:layout_width="250dp"
                     android:layout_height="25dp"
                     android:gravity="center_vertical"
                     android:text="Wednesday, 26 Aug 2020"
                     android:textColor="@color/colorBlack"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_15sdp" />
 
                 <TextView
+
+                    android:fontFamily="@font/regular_font"
+                    android:textSize="@dimen/_12sdp"
                     android:id="@+id/tvRepeatFrequency"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -230,7 +235,6 @@
                     android:textSize="@dimen/_15sdp" />
 
                 <Spinner
-
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -244,7 +248,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rlStartTime"
-            android:layout_marginTop="@dimen/_40sdp">
+            android:layout_marginTop="@dimen/_30sdp">
 
             <TextView
                 android:id="@+id/etNotes"
@@ -256,8 +260,9 @@
                 android:textSize="@dimen/_20sdp" />
 
             <EditText
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_100sdp"
+                android:layout_height="@dimen/_80sdp"
                 android:layout_below="@+id/etNotes"
                 android:layout_marginBottom="@dimen/_20sdp"
                 android:background="@drawable/bg_edit_text_add_service"
