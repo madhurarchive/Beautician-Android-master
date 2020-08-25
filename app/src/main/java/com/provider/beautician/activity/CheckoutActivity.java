@@ -22,6 +22,7 @@ ActivityCheckoutBinding binding;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_checkout);
-        Utility.setFragment(fragment=new CheckoutFragment(),false,this,R.id.flCheckoutContainer);
+        Utility.setFragmentCheckoutActivity(fragment=new CheckoutFragment(),false,this,R.id.flCheckoutContainer);
     }
+
 }
