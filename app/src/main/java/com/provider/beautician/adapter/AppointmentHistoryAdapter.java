@@ -14,7 +14,6 @@ import com.provider.beautician.model.AppointmentDetailsModel;
 import com.provider.beautician.model.AppointmentHistoryModel;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class AppointmentHistoryAdapter extends RecyclerView.Adapter<AppointmentHistoryAdapter.AppointmentHistoryViewHolder> {
     Context context;
@@ -41,7 +40,6 @@ public class AppointmentHistoryAdapter extends RecyclerView.Adapter<AppointmentH
     public int getItemCount() {
         return 2;
     }
-
     public class AppointmentHistoryViewHolder extends RecyclerView.ViewHolder {
         public AppointmentHistoryViewHolder(@NonNull View itemView) {
             super(itemView);

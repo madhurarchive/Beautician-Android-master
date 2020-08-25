@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.provider.beautician">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -28,7 +29,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.CheckoutActivity"></activity>
+        <activity android:name=".activity.NewAppointmentActivity"></activity>
+        <activity android:name=".activity.CheckoutActivity" />
         <activity
             android:name=".activity.ActLogin"
             android:screenOrientation="portrait" />

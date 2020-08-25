@@ -10,10 +10,26 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.provider.beautician.R;
 import com.provider.beautician.activity.CheckoutActivity;
+import com.provider.beautician.activity.NewAppointmentActivity;
 import com.provider.beautician.helpers.CommonUtils;
 
 public class Utility {
-    public static void setFragment(Fragment fragment, boolean removeStack, CheckoutActivity activity, int mContainer) {
+    public static void setFragmentCheckoutActivity(Fragment fragment, boolean removeStack, CheckoutActivity activity, int mContainer) {
+        FragmentManager fragmentManager = activity.getSupportFragmentManager();
+        FragmentTransaction ftTransaction = fragmentManager.beginTransaction();
+        if (removeStack) {
+            fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            ftTransaction.replace(mContainer, fragment);
+            ftTransaction.addToBackStack(null);
+        } else {
+            activity.getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(mContainer, fragment, "fragmentTag")
+                    .disallowAddToBackStack()
+                    .commit();
+        }
+    }
+    public static void setFragmentNewAppointmentActivity(Fragment fragment, boolean removeStack, NewAppointmentActivity activity, int mContainer) {
         FragmentManager fragmentManager = activity.getSupportFragmentManager();
         FragmentTransaction ftTransaction = fragmentManager.beginTransaction();
         if (removeStack) {

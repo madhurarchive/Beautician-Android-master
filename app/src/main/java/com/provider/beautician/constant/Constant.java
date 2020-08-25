@@ -45,5 +45,13 @@ public class Constant {
     public static final String SOCIAL_LOGIN_FACEBOOK        =   "FB";
     public static final String PRIVACY_POLICY_URL           =   API_BASE_URL + "webviewcontent/en/privacy_policy";
     public static final String TERMS_N_CONDITION_URL        =   API_BASE_URL + "webviewcontent/en/terms_and_conditions";
+
+    public static final String REPEAT_TYPE_WEEKLY           =   "week";
+    public static final String REPEAT_TYPE_NO_REPEAT        =   "do_not_repeat";
+
+    public static final String DATE_FORMAT_CAL              =   "yyyy-MM-dd";
+    public static final String TIME_FORMAT_CAL              =   "HH:mm:ss";
+
+
 }
 
